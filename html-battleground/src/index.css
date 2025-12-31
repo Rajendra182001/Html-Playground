@@ -1,0 +1,230 @@
+/* ----------------------------------------------
+   GLOBAL THEME OVERRIDES
+---------------------------------------------- */
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0f172a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* ----------------------------------------------
+   NAVBAR
+---------------------------------------------- */
+.navbar {
+  background: #1e293b;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #334155;
+}
+
+/* ----------------------------------------------
+   WRAPPER LAYOUT: TWO COLUMNS
+---------------------------------------------- */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* EVEN WIDTH PANELS */
+  gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 80px);
+}
+
+/* ----------------------------------------------
+   LEFT SIDEBAR: TAG LIST
+---------------------------------------------- */
+.sidebar-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.sidebar-left::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-left::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 10px;
+}
+
+/* ----------------------------------------------
+   SECTION CARD
+---------------------------------------------- */
+.section {
+  background: #1f2937;
+  border-radius: 10px;
+  padding: 14px;
+  color: white;
+  border: 1px solid #334155;
+  transition: 0.25s;
+}
+
+.section:hover {
+  border-color: #64748b;
+}
+
+.section h2 {
+  font-size: 16px;
+  margin: 0 0 12px 0;
+  cursor: pointer;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+/* ----------------------------------------------
+   INDIVIDUAL METHOD ROW
+---------------------------------------------- */
+.method {
+  background: #374151;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.method span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Run Buttons */
+.method button {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  background: #0b2f85;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s;
+  width: 80px;
+}
+
+.method button:hover {
+  background: #032754;
+}
+
+/* ----------------------------------------------
+   RIGHT SIDE OUTPUT PANEL
+---------------------------------------------- */
+.output-panel {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #334155;
+  overflow-y: auto;
+}
+
+.output-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.output-panel::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 10px;
+}
+
+.output-panel h2 {
+  margin-top: 0;
+  font-size: 20px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+/* ----------------------------------------------
+   OUTPUT HEADER: TITLE + CLEAR BUTTON
+---------------------------------------------- */
+.output-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Clear Button */
+.clear-btn {
+  padding: 4px 12px;
+  background: #475569;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.25s;
+}
+
+.clear-btn:hover {
+  background: #64748b;
+}
+
+/* ----------------------------------------------
+   DESCRIPTION PARAGRAPH
+---------------------------------------------- */
+.output-desc {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* ----------------------------------------------
+   PREVIEW AREA
+---------------------------------------------- */
+.preview-box {
+  background: #0f172a;
+  padding: 15px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  min-height: 60px;
+}
+
+/* ----------------------------------------------
+   CODE BLOCK
+---------------------------------------------- */
+.code-box {
+  background: #0f172a;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  font-size: 13px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.code-box::-webkit-scrollbar {
+  height: 5px;
+}
+
+.code-box::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 10px;
+}
