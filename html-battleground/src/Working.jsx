@@ -833,6 +833,8 @@ const Working = () => {
 
               <h4>HTML Code</h4>
               <pre className="code-box">{output.demo}</pre>
+
+             <h5> <a href="https://nammaqa.com/programming/#" target="_blank" rel="noopener noreferrer" style={{ marginTop: '16px', display: 'inline-block', color: '#0066cc', textDecoration: 'underline' }}>You want to a Practice More →</a></h5>
             </>
           )}
         </div>
